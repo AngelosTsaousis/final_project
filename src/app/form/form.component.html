@@ -1,0 +1,43 @@
+<div class="w-25 p-3">
+<form [formGroup]="myFrom" (ngSubmit)="onSubmit()">
+  <div>
+    <label >Title</label>
+    <input class="form-control" formControlName="title">
+  </div>
+
+  <div>
+    <label>Description</label>
+    <textarea class="form-control" formControlName="description" rows="3"></textarea>
+  </div>
+
+  <div>
+    <label>Priority</label>
+    <select class="form-control" formControlName="priority">
+      <option>0</option>
+      <option>1</option>
+    </select>
+  </div>
+
+  <div>
+    <label>Reporter</label>
+    <select class="form-control" formControlName="reporter">
+      <option>QA</option>
+      <option>DEV</option>
+    </select>
+  </div>
+
+  <div>
+    <label>Status</label>
+    <select class="form-control" formControlName="status">
+      <option>For Review</option>
+      <option>Done</option>
+    </select>
+  </div>
+  <div>
+    <button type="submit" class="btn btn-primary btn-lg">Submit</button>
+  </div>
+</form>
+
+
+
+</div>
